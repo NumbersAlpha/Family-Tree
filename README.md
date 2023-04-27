@@ -1,7 +1,6 @@
 # Family Tree Algorithm
 
-## Pseudo Code
-
+## Idea
 
 Create a class for class Person {constructor(name, parent)}.
 
@@ -24,3 +23,5 @@ The third statement will be used with ‘i’ from the second statement to incre
 If Person B (changed with a variable) is equal to any of A's people array, the algorithm should exit.
 
 After the algorithm, the program will identify the relation between person A and B.
+
+## Pseudo Code
