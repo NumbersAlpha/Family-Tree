@@ -9,16 +9,19 @@ let people;
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(100);
-
-	let Elisabeth = new person('Elisabeth', null)
-	let Marj = new person('Marj', Elisabeth)
+let nobody = new person('null', null)
+  
+	let Elisabeth = new person('Elisabeth', nobody)
+	
+  let Marj = new person('Marj', Elisabeth)
 	let Rosanne = new person('Rosanne', Elisabeth)
 	let Ruthanne = new person('Ruthanne', Elisabeth)
 	let Donnie = new person('Donnie', Elisabeth)
 	let Patricia = new person('Patricia', Elisabeth)
 
 	let Kim = new person('Kim', Marj)
-	let John = new person('John', Kim)
+
+  let John = new person('John', Kim)
 	let Jamie = new person('Jamie', Kim)
 
 	let people = [
@@ -31,7 +34,10 @@ function setup() {
 	let personB = random(people)
 	
 	print('person A', personA.name, personA.parent.name)
-	print('person B', personB)
+	print('person B', personB.name, personB.parent.name)
+
+
+  
 // while(true) {
 // 	let generation = 0
 // 	generation++
