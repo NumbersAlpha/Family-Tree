@@ -4,14 +4,18 @@ class person {
 		this.parent = parent
 	}
 }
-let people;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(100);
-let nobody = new person('null', null)
   
-	let Elisabeth = new person('Elisabeth', nobody)
+  familyTree()
+    }
+
+function familyTree()  {
+
+  
+	let Elisabeth = new person('Elisabeth', null)
 	
   let Marj = new person('Marj', Elisabeth)
 	let Rosanne = new person('Rosanne', Elisabeth)
@@ -24,22 +28,17 @@ let nobody = new person('null', null)
   let John = new person('John', Kim)
 	let Jamie = new person('Jamie', Kim)
 
-	let people = [
-		Elisabeth, Marj, Rosanne, Ruthanne, Donnie, Patricia, Kim, John, Jamie
-	]
+	let people = [Elisabeth, Marj, Rosanne, Ruthanne, Donnie, Patricia, Kim, John, Jamie] 
 
-	// let personA = Math.floor(random(0, people.length))
-	// let personB = Math.floor(random(0, people.length))
-	let personA = random(people)
-	let personB = random(people)
-	
-	print('person A', personA.name, personA.parent.name)
-	print('person B', personB.name, personB.parent.name)
+  let A = random(people)
 
 
+let ALineage = A
+let generation = []
   
-// while(true) {
-// 	let generation = 0
-// 	generation++
-// }
+  while (ALineage != null)  {
+   generation.push(ALineage.name)
+    ALineage = ALineage.parent 
+  }
+  print(generation)
 }
