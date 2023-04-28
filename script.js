@@ -37,16 +37,22 @@ let generation = []
 let ADepth = 0
 
   while (ALineage != null)  {
-    ADepth++
-   generation.push(ALineage.name)
-    ALineage = ALineage.parent 
+	ADepth++
+  	generation.push(ALineage.name)
+    	ALineage = ALineage.parent 
   }
 
+let BFamily = B
+let Bgeneration = []
+let BDepth = 0
+
+while (BFamily != null) {
+	BDepth++
+	Bgeneration.push(BFamily.name)
+	BFamily = BFamily.parent
+	}	
+	
 if (A == B)  {
   print('Person A and person B are the same person!')
 }
-  print(generation)
-  print('Depth is ', ADepth)
-  
-  
 }
