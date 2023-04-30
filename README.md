@@ -30,3 +30,58 @@ for (let j = 0; j < BDepth; j++) {
 In this case, the values of ADiff and BDiff will affect their relations. The lower the *Diff*, the closer that person is to the most common relative.
 
 ## Pseudo Code
+
+//Create class person{ 
+
+//Create constructor(name, parent){
+
+//Create functions: this.name = name this.parent = parent}}
+
+//Given person A and person B with a name and parent
+
+//Create an array for A:
+
+//let personA equal A 
+
+//let ALineage be the array
+
+//let ADepth equal 0
+
+//while personA is not null, 
+
+//increment ADepth
+
+//push personA.name into ALineage
+
+//make personA equal personA.parent
+
+//Create an array for B:
+
+//let personB equal B
+
+//let BLineage be the array
+
+//let BDepth equal 0
+
+//while personB is not null, 
+
+//increment BDepth
+
+//push personB.name into BLineage
+
+//make personB equal personB.parent
+
+//if A and B are equal, print(‘Person A and Person B are the same person!’)
+
+// else, let ADiff=0, let BDiff=0
+
+//for (let j = 0; j < BDepth; j++) {
+
+//BDiff++
+
+//for (let i = 0; i < ADepth; i++) {
+
+//ADiff++
+
+//if (ALineage[i] equals BLineage[j]) {print(ALineage[i], ‘is the most common ancestor’)}
+
