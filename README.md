@@ -24,7 +24,7 @@ Person A's lineage is also sorted with a for loop, This time, inside of person B
 ### Part Three 1/2: Variable for closest relations
 Even though Person A and B both have their own depth already (i & j), it is used in their respective for loops.
 
-To determine the closest relations, another variable be added (per person) outside the for loops, then incremented inside, in either part two(B) or three(A). 
+To determine the closest relations, another variable will be added (per person) outside the for loops, then incremented inside, in either part two(B) or three(A). 
 
 For the example: both lineages have 2 related people, Vanessa and Squidward. Again, the variables added will increment like in part one. The only difference is that when ALineage[i] == BLineage[j] the algorithm will return the most common ancestor. In the example's case, it would be Vanessa.
 
