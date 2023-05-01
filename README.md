@@ -100,5 +100,5 @@ part two + three: O(n^{2})
 
 ## Trade offs
 The trade off in using for loops, to loop a certain amount of times; not indefinitely.
-Using if and else if saved time thinking, but used a lot of lines and is limited.
+Using if and else if saved time thinking, but uses a lot of lines and is limited.
 Creating arrays may have organized the two random people's lineages, but created more complexity.
