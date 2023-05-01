@@ -55,13 +55,13 @@ In this case, the values of ADiff and BDiff will affect their relations. The low
 
 //let ADepth equal 0
 
-//while personA is not null, 
+//while (personA is not null){
 
 //increment ADepth
 
 //push personA.name into ALineage
 
-//make personA equal personA.parent
+//make personA equal personA.parent}
 
 //Create an array for B:
 
@@ -71,13 +71,13 @@ In this case, the values of ADiff and BDiff will affect their relations. The low
 
 //let BDepth equal 0
 
-//while personB is not null, 
+//while (personB is not null){ 
 
 //increment BDepth
 
 //push personB.name into BLineage
 
-//make personB equal personB.parent
+//make personB equal personB.parent}
 
 //if A and B are equal, print(‘Person A and Person B are the same person!’)
 
