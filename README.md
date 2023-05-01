@@ -26,7 +26,7 @@ Even though Person A and B both have their own depth already (i & j), it is used
 
 To determine the closest relations, another variable be added (per person) outside the for loops, then incremented inside, in either part two(B) or three(A). 
 
-For the example: both lineages have 3 related people, William, Vanessa, and Squidward. Again, the variables added will increment like in part one. The only difference is that when ALineage[i] == BLineage[j] the algorithm will return the most common ancestor.
+For the example: both lineages have 3 related people, William, Vanessa, and Squidward. Again, the variables added will increment like in part one. The only difference is that when ALineage[i] == BLineage[j] the algorithm will return the most common ancestor. In the example's case, it would be William.
 
 ### Part Three 3/4: Relations
 In this case, the values of ADiff and BDiff will affect their relations. The lower the *Diff*, the closer that person is to the most common relative. Relations will be covered with if and else if statements.
