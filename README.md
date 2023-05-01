@@ -10,7 +10,7 @@ The algorithm starts by making two arrays, one array for person A, and one array
 
 Person A's example ~ ALineage = [Tom(i=1), William(i=2), Vanessa(i=3), Squidward(i=4)]
 
-Person B's example ~ BLineage = [Martin(j=1), Devon(j=2), William(j=3), Vanessa(j=4), Squidward(j=5)]
+Person B's example ~ BLineage = [Martin(j=1), Vanessa(j=2), Squidward(j=3)]
 
 After generating a lineage (array of parents) for each given person, the next part of the algorithm is to compare the arrays.
 Comparing the arrays will have two steps, cycling person A's lineage (from person A), and cycling person B's lineage (from person B); with for statements.
@@ -26,7 +26,7 @@ Even though Person A and B both have their own depth already (i & j), it is used
 
 To determine the closest relations, another variable be added (per person) outside the for loops, then incremented inside, in either part two(B) or three(A). 
 
-For the example: both lineages have 3 related people, William, Vanessa, and Squidward. Again, the variables added will increment like in part one. The only difference is that when ALineage[i] == BLineage[j] the algorithm will return the most common ancestor. In the example's case, it would be William.
+For the example: both lineages have 2 related people, Vanessa and Squidward. Again, the variables added will increment like in part one. The only difference is that when ALineage[i] == BLineage[j] the algorithm will return the most common ancestor. In the example's case, it would be Vanessa.
 
 ### Part Three 3/4: Relations
 In this case, the values of ADiff and BDiff will affect their relations. The lower the *Diff*, the closer that person is to the most common relative. Relations will be covered with if and else if statements.
